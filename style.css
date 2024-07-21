@@ -1,0 +1,147 @@
+.d-flex
+{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+.second
+{
+    background-color:aliceblue;
+    border: 20px;
+}
+.main
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+  
+
+.functionality
+{
+    
+    width: auto;
+}
+.FGrid
+{
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+    gap: 30px;
+    
+}
+#part_0
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+#yes
+{
+    background-color: green;
+    border-radius: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#no
+{
+    background-color: yellow;
+    border-radius: 20px;
+    font-size: 200px;
+    text-align: center;
+}
+.spinner-container {
+    width: 50%; /* Set the width to 50% of the viewport */
+    /*margin: 0 auto; /* Center the spinner-container horizontally */
+   /* text-align: center;  Align children (like .main-spin and .image-button) to center */
+  }
+  
+  .main-spin {
+    border-radius: 50%;
+    display: inline-block; /* Ensure inline-block for centering to work */
+    position: relative;
+    top: 200px;
+    left: 33px;
+    /* Ensure relative positioning for absolute child (.image-button) */
+  }
+  #rotor
+  {
+    position: absolute;
+    left: 265px;
+    top:600px
+    
+  }
+  #spinButton
+{
+  width:80px;
+  height:80px
+}
+.arrow-button {
+    position: relative;
+    background-color:black;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 50%; /* Makes the button oval */
+    cursor: pointer;
+    outline: none;
+}
+
+.arrow-button .arrow {
+    position: absolute;
+    top: -20px; /* Adjusts the position of the arrow */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 40px solid #3498db;
+}
+
+/* Additional hover effect (optional) */
+.arrow-button:hover {
+    background-color: #2980b9;
+}
+
+  .image-button {
+    
+    position: relative;
+    bottom: 45%; /* Move to 50% down */
+    left: 95%; /* Move to 50% right */
+    transform: translate(-50%, -50%); /* Center the image-button */
+   z-index: +2;
+  }
+  /* style.css */
+  .input-container
+  {
+    border-radius: 5%;
+    border: solid black;
+  }
+  
+  .main-spin {
+    transition: transform 10s ease-in-out;
+  }
+  .input-mode-no
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+  .input-mode-no>button
+  {
+    height: 200px;
+    width: 200px;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+  
+  #no3
+  {
+    background-color: black;
+    color: white;
+  }
+  
+  
+  
